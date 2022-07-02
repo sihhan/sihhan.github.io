@@ -2,50 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    <title>melonHan's Page</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://www.webdesigns.com.tw/images/logo.ico" type="image/x-icon" />
+  <!-- CSS only -->
+  <link rel="stylesheet" media="all" href="style.css" type="text/css" />
+  <title>melonHan's Page</title>
 </head>
 
 <body>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <div class="container py-5">
-        <div class="text-center">
-            <!-- avatar -->
-            <img src="https://d1fdloi71mui9q.cloudfront.net/oVy9wtLFSya46pX7Atak_st8713623wcf4McQ"
-                class="rounded-circle z-depth-2" style="width: 100px" alt="melon han">
+  <div class="wrapper">
+    <div class="profile-card js-profile-card">
+      <div class="profile-card__img">
+        <img src="https://d1fdloi71mui9q.cloudfront.net/oVy9wtLFSya46pX7Atak_st8713623wcf4McQ" alt="profile card" />
+      </div>
 
-            <h1 class="h2">melonHan</h1>
-
-            <p>🧑🏻‍💻 工程師 | 📷 攝影師 | ✈️ 旅行​</p>
+      <div class="profile-card__cnt js-profile-cnt">
+        <div class="profile-card__name" data-text="Han">Han</div>
+        <div class="profile-card__txt">🧑🏻‍💻 工程師 | 📷 攝影師 | ✈️ 旅行​</div>
+        <div class="profile-card__content">
+          🇯🇵 | <a target="_blank" href="https://jafun.com.tw" ​​>JaFun 日本伴手禮</a><br>
+          🎁 | <a target="_blank" href="https://reurl.cc/k7yxaL">JaFun 日本伴手禮訂閱</a><br>
+          🖥 | <a target="_blank" href="https://alion.tw">這裡可以找我</a>
+        </div>
+        <div class="profile-card-loc">
+          <span class="profile-card-loc__icon">
+            <svg class="icon">
+              <use xlink:href="#icon-location"></use>
+            </svg>
+          </span>
         </div>
 
-        <div class="d-grid gap-2">
-            <a href="https://www.jafun.com.tw/subscribe" target="_blank" class="btn btn-outline-primary" role="button"
-                aria-disabled="true">
-                <img src="https://jafun.s3.ap-northeast-1.amazonaws.com/banner/box_8.png" class="rounded me-3"
-                    style="width: 50px" alt="JaFun伴手禮食箱">
-                JaFun伴手禮食箱</a>
-            <a href="http://jafun.com.tw" target="_blank" class="btn btn-outline-primary" role="button"
-                aria-disabled="true">
-                <img src="https://api.jafun.com.tw/api/v1/img/product/UISorKpg1B3fPJElumcZFfoFEPGczmKkWKOnUwll.jpg"
-                    class="rounded me-3" style="width: 50px" alt="JaFun日本伴手禮商城">
-                JaFun日本伴手禮商城</a>
-            <a href="https://alion.tw" target="_blank" class="btn btn-outline-primary" role="button"
-                aria-disabled="true">
-                <img src="https://alion.tw/_nuxt/img/997f412.png" class="rounded me-3" style="width: 50px"
-                    alt="阿利恩股份有限公司">
-                阿利恩股份有限公司</a>
+        <div class="profile-card-social">
+          <a href="https://www.facebook.com/melonslife/" class="profile-card-social__item facebook" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://www.instagram.com/shw_han/" class="profile-card-social__item instagram" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://github.com/sihhan" class="profile-card-social__item github" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a href="" class="profile-card-social__item link" target="_blank">
+            <i class="bi bi-link-45deg"></i>
+          </a>
         </div>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
