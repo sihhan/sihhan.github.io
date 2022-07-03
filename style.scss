@@ -13,6 +13,8 @@ html {
 }
 
 body {
+    height: 100%;
+    width: 100%;
     font-family: 'Quicksand', sans-serif;
     color: #324e63;
     margin: 0;
@@ -20,8 +22,16 @@ body {
 
 a,
 a:hover {
-    color: #0e71c8;
     text-decoration: none;
+}
+
+a {
+    color: #0e71c8;
+}
+
+::selection {
+    color: #fff;
+    background-color: #0e71c8;
 }
 
 .icon {
@@ -40,9 +50,6 @@ a:hover {
     min-height: 100vh;
     padding: 50px 20px;
     padding-top: 100px;
-    display: flex;
-    background: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
-
     display: flex;
     background: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
 
@@ -124,15 +131,6 @@ a:hover {
         font-weight: bold;
         position: relative;
     }
-
-    // &__name::before {
-    //     position: absolute;
-    //     content: attr(data-text);
-    //     text-shadow: 0px 0px 20px #0e71c8;
-    //     filter: blur(10px) brightness(0);
-    //     animation: flicker 2s linear forwards;
-    //     animation-delay: 1s;
-    // }
 
     &__txt {
         font-size: 18px;
@@ -459,50 +457,45 @@ a:hover {
         border-radius: 12px;
         transition: all .3s;
     }
+}
 
-    @keyframes flicker {
-        0% {
-            filter: blur(5px) brightness(1);
-        }
+#footer {
+    padding: .5rem 0;
+    background-color: #232323;
+    text-align: center;
+    color: #fff;
+}
 
-        3% {
-            filter: blur(5px) brightness(0);
-        }
+#footer p {
+    font-size: .85rem;
+}
 
-        6% {
-            filter: blur(5px) brightness(0);
-        }
+#footer p a {
+    color: #fff;
+    text-decoration: underline;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
 
-        7% {
-            filter: blur(5px) brightness(1);
-        }
+#footer p a:hover {
+    color: #00ff6c;
+}
 
-        8% {
-            filter: blur(5px) brightness(0);
-        }
+.test {
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
 
-        9% {
-            filter: blur(5px) brightness(1);
-        }
+    @media screen and (max-width: 576px) {
+        width: 75%;
+    }
 
-        10% {
-            filter: blur(5px) brightness(0);
-        }
+    @media screen and (min-width: 820px) {
+        width: 36%;
+    }
 
-        20% {
-            filter: blur(5px) brightness(1);
-        }
-
-        50% {
-            filter: blur(5px) brightness(1);
-        }
-
-        99% {
-            filter: blur(5px) brightness(0);
-        }
-
-        100% {
-            filter: blur(5px) brightness(1);
-        }
+    @media screen and (max-width: 1180px) {
+        width: 36%;
     }
 }

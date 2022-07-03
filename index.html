@@ -8,6 +8,9 @@
   <link rel="icon" href="https://www.webdesigns.com.tw/images/logo.ico" type="image/x-icon" />
   <!-- CSS only -->
   <link rel="stylesheet" media="all" href="style.css" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>melonHan's Page</title>
 </head>
 
@@ -22,9 +25,9 @@
         <div class="profile-card__name" data-text="Han">Han</div>
         <div class="profile-card__txt">🧑🏻‍💻 工程師 | 📷 攝影師 | ✈️ 旅行​</div>
         <div class="profile-card__content">
-          🇯🇵 | <a target="_blank" href="https://jafun.com.tw" ​​>JaFun 日本伴手禮</a><br>
-          🎁 | <a target="_blank" href="https://reurl.cc/k7yxaL">JaFun 日本伴手禮訂閱</a><br>
-          🖥 | <a target="_blank" href="https://alion.tw">這裡可以找我</a>
+          <div class="test">🇯🇵 | <a target="_blank" href="https://jafun.com.tw" ​​>JaFun 日本伴手禮</a></div>
+          <div class="test">🎁 | <a target="_blank" href="https://reurl.cc/k7yxaL">JaFun 日本伴手禮訂閱</a></div>
+          <div class="test">🖥 | <a target="_blank" href="https://alion.tw">這裡可以找我</a></div>
         </div>
         <div class="profile-card-loc">
           <span class="profile-card-loc__icon">
@@ -54,6 +57,14 @@
       </div>
     </div>
   </div>
+
+  <section id="footer">
+    <p>©<span id="year"></span> by <a href="" target="_blank">sihhan</a></p>
+  </section>
+
+  <script type="text/javascript">
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
