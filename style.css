@@ -124,6 +124,9 @@ a {
   margin-bottom: 15px;
   font-weight: bold;
   position: relative;
+  top: -7px;
+  animation: fadeUpIn 3s;
+  -webkit-animation: fadeUpIn 3s;
 }
 .profile-card__txt {
   font-size: 18px;
@@ -131,6 +134,8 @@ a {
   color: #324e63;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
+  animation: txtfadeUpIn 3s;
+  -webkit-animation: txtfadeUpIn 3s;
 }
 .profile-card__txt strong {
   color: #ff2846;
@@ -434,6 +439,8 @@ a {
 .content-text {
   text-align: left;
   margin: 0 auto;
+  animation: txtfadeUpIn 3s;
+  -webkit-animation: txtfadeUpIn 3s;
 }
 @media screen and (max-width: 575.99px) {
   .content-text {
@@ -458,5 +465,44 @@ a {
 @media screen and (min-width: 1200px) {
   .content-text {
     width: 33%;
+  }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadeUpIn {
+  from {
+    opacity: 0;
+    top: 500px;
+  }
+  to {
+    opacity: 1;
+    top: -7px;
+  }
+}
+@keyframes fadeUpIn {
+  from {
+    opacity: 0;
+    top: 500px;
+  }
+  to {
+    opacity: 1;
+    top: -7px;
+  }
+}
+/* Safari and Chrome */
+@-webkit-keyframes txtfadeUpIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes txtfadeUpIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
