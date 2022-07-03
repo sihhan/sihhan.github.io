@@ -47,7 +47,6 @@ a {
 
 .wrapper {
   width: 100%;
-  width: 100%;
   height: auto;
   min-height: 100vh;
   padding: 50px 20px;
@@ -131,6 +130,7 @@ a {
   font-weight: 550;
   color: #324e63;
   margin-bottom: 15px;
+  letter-spacing: 0.5px;
 }
 .profile-card__txt strong {
   color: #ff2846;
@@ -146,7 +146,6 @@ a {
 }
 @media screen and (max-width: 576px) {
   .profile-card__content {
-    width: 300px;
     font-size: 16px;
     margin-bottom: 15px;
   }
