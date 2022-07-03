@@ -134,7 +134,7 @@ a {
 
     &__txt {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 550;
         color: #324e63;
         margin-bottom: 15px;
 
@@ -145,8 +145,8 @@ a {
     }
 
     &__content {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         color: #324e63;
         margin-bottom: 15px;
         align-items: center;
@@ -482,20 +482,27 @@ a {
     color: #00ff6c;
 }
 
-.test {
+.content-text {
     text-align: left;
     margin: 0 auto;
-    width: 50%;
 
-    @media screen and (max-width: 576px) {
-        width: 75%;
+    @media screen and (max-width: 575.99px) {
+        width: 70%;
     }
 
-    @media screen and (min-width: 820px) {
+    @media screen and (min-width: 576px) and (max-width: 767.99px) {
+        width: 50%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991.99px) {
         width: 36%;
     }
 
-    @media screen and (max-width: 1180px) {
+    @media screen and (min-width: 992px) and (max-width: 1199.99px) {
         width: 36%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 33%;
     }
 }
