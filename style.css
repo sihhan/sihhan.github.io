@@ -52,7 +52,7 @@ a {
   padding: 50px 20px;
   padding-top: 100px;
   display: flex;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: url("https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.6435-9/151381349_541326743428868_4736892302096688995_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=Omwb8NetA7UAX-eFNjZ&_nc_ht=scontent.ftpe4-1.fna&oh=00_AT8BFhKWvtpkFbMiYXiKm5UEqiB17W47dIPNMSP6eFBTGw&oe=62F0EB7A");
 }
 @media screen and (max-width: 768px) {
   .wrapper {
