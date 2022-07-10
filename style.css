@@ -137,8 +137,13 @@ a {
   color: #324e63;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
-  animation: txtfadeUpIn 3s;
-  -webkit-animation: txtfadeUpIn 3s;
+  width: 24ch;
+  margin: 15px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 3s steps(22), blink 0.4s step-end infinite alternate;
+  -webkit-animation: typing 3s steps(22), blink 0.4s step-end infinite alternate;
 }
 .profile-card__txt strong {
   color: #ff2846;
@@ -446,33 +451,9 @@ a {
 .content-text {
   text-align: left;
   margin: 0 auto;
+  width: 200px;
   animation: txtfadeUpIn 3s;
   -webkit-animation: txtfadeUpIn 3s;
-}
-@media screen and (max-width: 575.99px) {
-  .content-text {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767.99px) {
-  .content-text {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991.99px) {
-  .content-text {
-    width: 36%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199.99px) {
-  .content-text {
-    width: 36%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .content-text {
-    width: 33%;
-  }
 }
 
 /* Safari and Chrome */
@@ -511,5 +492,25 @@ a {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }/*# sourceMappingURL=style.css.map */
