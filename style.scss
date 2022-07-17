@@ -504,8 +504,22 @@ a {
     text-align: left;
     margin: 0 auto;
     width: 200px;
+    display: flex;
     animation: txtfadeUpIn 3s;
     -webkit-animation: txtfadeUpIn 3s;
+
+    &__img {
+        width: 48px;
+        height: 48px;
+    }
+
+    &__img img {
+        height: 100%;
+    }
+
+    &__link {
+        padding: 8px;
+    }
 }
 
 /* Safari and Chrome */
