@@ -26,7 +26,8 @@ a:hover {
 }
 
 a {
-    color: #0e71c8;
+    color: rgb(155, 3, 3);
+    font-weight: bold;
 }
 
 ::selection {
@@ -54,6 +55,7 @@ a {
     background-image: url('https://i.imgur.com/L4n4IdN.jpg');
     background-size: cover;
     background-position: center center;
+    position: relative;
 
     @media screen and (max-width: 768px) {
         height: auto;
@@ -68,7 +70,7 @@ a {
     min-height: 460px;
     margin: auto;
     box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 12px;
     max-width: 700px;
     position: relative;
@@ -133,6 +135,7 @@ a {
         font-weight: bold;
         position: relative;
         letter-spacing: 1px;
+        text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 
         top: -7px;
         animation: fadeUpIn 3s;
@@ -210,7 +213,6 @@ a {
         &__title {
             font-weight: 700;
             font-size: 27px;
-            //color: #6944ff;
             color: #324e63;
         }
 
@@ -218,7 +220,6 @@ a {
             font-weight: 500;
             margin-top: 7px;
         }
-
     }
 
     &-social {
@@ -300,7 +301,6 @@ a {
         .icon-font {
             display: inline-flex;
         }
-
     }
 
     &-ctr {
@@ -312,7 +312,6 @@ a {
         @media screen and (max-width: 576px) {
             flex-wrap: wrap;
         }
-
     }
 
     &__button {
@@ -373,7 +372,6 @@ a {
             &:hover {
                 box-shadow: 0px 7px 30px rgba(19, 127, 212, 0.75);
             }
-
         }
 
         &.button--orange {
@@ -383,7 +381,6 @@ a {
             &:hover {
                 box-shadow: 0px 7px 30px rgba(223, 45, 70, 0.75);
             }
-
         }
 
         &.button--gray {
@@ -391,7 +388,6 @@ a {
             background: #dcdcdc;
             color: #142029;
         }
-
     }
 
     &-message {
@@ -437,9 +433,7 @@ a {
             @media screen and (max-width: 576px) {
                 flex-wrap: wrap;
             }
-
         }
-
     }
 
     textarea {
@@ -460,7 +454,6 @@ a {
             outline: none;
             border-color: #8a979e;
         }
-
     }
 
     &__overlay {
@@ -474,6 +467,45 @@ a {
         background: rgba(22, 33, 72, 0.35);
         border-radius: 12px;
         transition: all .3s;
+    }
+
+    &__share {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.7);
+        background-color: rgba(255, 255, 255, 0.5);
+        top: 50px;
+        right: 50px;
+        cursor: pointer;
+
+        @media screen and (max-width: 575.99px) {
+            top: 50px;
+            right: 30px;
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767.99px) {
+            top: 50px;
+            right: 50px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991.99px) {
+            top: 50px;
+            right: 65px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199.99px) {
+            top: 50px;
+            right: 60px;
+        }
+
+        img {
+            position: absolute;
+            font-size: 20px;
+            right: 5px;
+            top: 5px;
+        }
     }
 }
 
@@ -507,14 +539,17 @@ a {
     display: flex;
     animation: txtfadeUpIn 3s;
     -webkit-animation: txtfadeUpIn 3s;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
 
     &__img {
-        width: 48px;
-        height: 48px;
+        width: 50px;
+        height: 50px;
     }
 
     &__img img {
         height: 100%;
+        -webkit-filter: contrast(200%);
+        filter: contrast(200%);
     }
 
     &__link {

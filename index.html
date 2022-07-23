@@ -25,7 +25,7 @@
   <meta property="og:image:width" content="600">
 
   <!-- CSS only -->
-  <link rel="stylesheet" media="all" href="style.css" type="text/css" />
+  <link rel="stylesheet" media="all" href="css/style.css" type="text/css" />
 
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -46,6 +46,10 @@
 
 <body>
   <div class="wrapper">
+    <div class="profile-card__share">
+      <img src="images/share-gradient.gif" alt="分享">
+    </div>
+
     <div class="profile-card js-profile-card">
       <div class="profile-card__img">
         <img src="https://d1fdloi71mui9q.cloudfront.net/oVy9wtLFSya46pX7Atak_st8713623wcf4McQ" alt="profile card" />
@@ -57,22 +61,21 @@
         <div class="profile-card__content">
           <div class="content-text">
             <div class="content-text__img"><img
-                src="https://d1fdloi71mui9q.cloudfront.net/WQWsOdysSCzWfhInfRXl_233814367_986322062157750_994980430568825688_n.png"
+                src="https://i.imgur.com/srg0Eiz.png"
                 alt="JaFun 日本伴手禮"></div>
             <div class="content-text__link"><a target="_blank" href="https://jafun.com.tw">日本暢銷零食</a></div>
           </div>
 
           <div class="content-text">
             <div class="content-text__img"><img
-                src="https://d1fdloi71mui9q.cloudfront.net/WQWsOdysSCzWfhInfRXl_233814367_986322062157750_994980430568825688_n.png"
+                src="https://i.imgur.com/srg0Eiz.png"
                 alt="JaFun 日本伴手禮訂閱"></div>
             <div class="content-text__link"><a target="_blank" href="https://reurl.cc/k7yxaL">日本暢銷零食訂閱</a></div>
           </div>
 
           <div class="content-text">
             <div class="content-text__img"><img
-                src="https://d1fdloi71mui9q.cloudfront.net/HX8WKV6XRZmKOb3Q1F4Q_undefined"
-                alt="JaFun 日本伴手禮訂閱"></div>
+                src="https://i.imgur.com/zWopqDB.png" alt="阿利恩股份有限公司"></div>
             <div class="content-text__link"><a target="_blank" href="https://alion.tw">這裡可以找我</a></div>
           </div>
         </div>
@@ -109,9 +112,7 @@
     <p>Copyright © <span id="year"></span><a href="" target="_blank"> sihhan</a> All rights reserved. </p>
   </section>
 
-  <script type="text/javascript">
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
+  <script type="text/javascript" src="js/index.min.js"></script>
 </body>
 
 </html>
