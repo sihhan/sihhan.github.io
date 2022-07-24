@@ -510,10 +510,11 @@ a {
     text-align: center;
     color: #fff;
     position: absolute;
-    width: 95%;
+    max-width: 700px;
     bottom: 10px;
     right: 10px;
     left: 10px;
+    margin: auto;
 }
 
 .footer p {
