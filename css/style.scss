@@ -49,7 +49,6 @@ a {
     min-height: 100vh;
     padding: 50px 20px;
     padding-top: 100px;
-    display: flex;
     // background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     background-image: url('https://i.imgur.com/Ve4E291.jpg');
     background-size: cover;
@@ -538,8 +537,8 @@ a {
 .content-text {
     text-align: left;
     margin: 0 auto;
-    width: 200px;
-    display: flex;
+    width: 300px;
+    letter-spacing: 0.5px;
     animation: txtfadeUpIn 3s;
     -webkit-animation: txtfadeUpIn 3s;
 
@@ -554,6 +553,37 @@ a {
 
     &__link {
         padding: 8px;
+    }
+}
+
+.profile-info {
+    margin: 10px auto;
+    max-width: 700px;
+    position: relative;
+
+    &__label {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 19px;
+        padding: 15px 40px;
+        border-radius: 12px;
+        letter-spacing: 0.5px;
+        color: #fff;
+        background: linear-gradient(15deg, rgb(217 84 88), rgb(198, 162, 163) 100%);
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    img {
+        border-radius: 12px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
