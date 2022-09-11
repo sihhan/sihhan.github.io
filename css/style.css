@@ -521,12 +521,13 @@ a {
 }
 .profile-info__label {
   width: 100%;
-  display: block;
-  text-align: center;
+  display: flex;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 19px;
-  padding: 15px 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 40px;
   border-radius: 12px;
   letter-spacing: 0.5px;
   color: #fff;
@@ -536,10 +537,18 @@ a {
 .profile-info__label:hover {
   transform: translateY(-5px);
 }
+.profile-info__img {
+  width: 60px;
+  height: 60px;
+}
 .profile-info img {
-  border-radius: 12px;
   width: 100%;
+  border-radius: 12px;
   margin-bottom: 10px;
+  transition: all 0.3s;
+}
+.profile-info img:hover {
+  transform: translateY(-5px);
 }
 
 /* Safari and Chrome */
