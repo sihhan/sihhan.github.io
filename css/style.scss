@@ -69,7 +69,7 @@ a {
     margin: auto;
     box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 12px;
+    border-radius: 8px;
     max-width: 700px;
     position: relative;
 
@@ -472,12 +472,12 @@ a {
         border-radius: 50%;
         box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.7);
         background-color: rgba(255, 255, 255, 0.7);
-        top: 50px;
+        top: 40px;
         right: 50px;
         cursor: pointer;
 
         @media screen and (max-width: 575.99px) {
-            top: 50px;
+            top: 40px;
             right: 30px;
         }
 
@@ -568,12 +568,11 @@ a {
         font-weight: 700;
         font-size: 19px;
         align-items: center;
-        justify-content: center;
-        padding: 5px 40px;
+        justify-content: left;
         border-radius: 12px;
         letter-spacing: 0.5px;
         color: #fff;
-        background: linear-gradient(15deg, rgb(217 84 88), rgb(198, 162, 163) 100%);
+        // background: linear-gradient(15deg, rgb(217 84 88), rgb(198, 162, 163) 100%);
         transition: all .3s;
 
         &:hover {
@@ -588,7 +587,7 @@ a {
 
     img {
         width: 100%;
-        border-radius: 12px;
+        border-radius: 8px;
         margin-bottom: 10px;
         transition: all .3s;
 
