@@ -3,6 +3,12 @@
 // icons
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
+// Variables
+$base-color: #324e63;
+$white-color: #fff;
+$link-color: rgb(155, 3, 3);
+$text-selection-background-color: #0e71c8;
+
 html {
     position: relative;
     overflow-x: hidden !important;
@@ -16,7 +22,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Quicksand', sans-serif;
-    color: #324e63;
+    color: $base-color;
     margin: 0;
 }
 
@@ -26,12 +32,12 @@ a:hover {
 }
 
 a {
-    color: rgb(155, 3, 3);
+    color: $link-color;
 }
 
 ::selection {
-    color: #fff;
-    background-color: #0e71c8;
+    color: $white-color;
+    background-color: $text-selection-background-color;
 }
 
 .icon {
@@ -142,7 +148,7 @@ a {
     &__txt {
         font-size: 18px;
         font-weight: 550;
-        color: #324e63;
+        color: $base-color;
         margin-bottom: 15px;
         letter-spacing: 0.5px;
         width: 24ch;
@@ -162,7 +168,7 @@ a {
     &__content {
         font-size: 16px;
         font-weight: 500;
-        color: #324e63;
+        color: $base-color;
         margin-bottom: 15px;
         align-items: center;
         line-height: 2em;
@@ -210,7 +216,7 @@ a {
         &__title {
             font-weight: 700;
             font-size: 27px;
-            color: #324e63;
+            color: $base-color;
         }
 
         &__txt {
@@ -234,7 +240,7 @@ a {
             border-radius: 50%;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: $white-color;
             background: #405de6;
             box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
             position: relative;
@@ -280,7 +286,7 @@ a {
             }
 
             &.codepen {
-                background: linear-gradient(45deg, #324e63, #414447);
+                background: linear-gradient(45deg, $base-color, #414447);
                 box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
             }
 
@@ -322,7 +328,7 @@ a {
         min-width: 201px;
         border-radius: 50px;
         min-height: 55px;
-        color: #fff;
+        color: $white-color;
         cursor: pointer;
         backface-visibility: hidden;
         transition: all .3s;
@@ -406,7 +412,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         height: 100%;
-        background: #fff;
+        background: $white-color;
         border-radius: 10px;
         padding: 35px;
         transform: scale(.8);
@@ -441,7 +447,7 @@ a {
         border: 2px solid #dcdcdc;
         border-radius: 10px;
         padding: 15px 20px;
-        color: #324e63;
+        color: $base-color;
         font-weight: 500;
         font-family: 'Quicksand', sans-serif;
         outline: none;
@@ -508,7 +514,7 @@ a {
 
 .footer {
     text-align: center;
-    color: #fff;
+    color: $white-color;
     position: absolute;
     max-width: 700px;
     bottom: 10px;
@@ -524,7 +530,7 @@ a {
 }
 
 .footer p a {
-    color: #fff;
+    color: $white-color;
     text-decoration: underline;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -572,12 +578,16 @@ a {
         justify-content: left;
         border-radius: 12px;
         letter-spacing: 0.5px;
-        color: #fff;
+        color: $white-color;
         // background: linear-gradient(15deg, rgb(217 84 88), rgb(198, 162, 163) 100%);
         transition: all .3s;
 
         &:hover {
             transform: translateY(-5px);
+        }
+
+        .first {
+            color: $base-color;
         }
     }
 

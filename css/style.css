@@ -535,6 +535,9 @@ a {
 .profile-info__label:hover {
   transform: translateY(-5px);
 }
+.profile-info__label .first {
+  color: #324e63;
+}
 .profile-info__img {
   width: 60px;
   height: 60px;
