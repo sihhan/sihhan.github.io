@@ -628,6 +628,18 @@ a {
     }
 }
 
+#qr-code-container {
+    margin: 10px auto;
+    max-width: 700px;
+    position: relative;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Safari and Chrome */
 @keyframes fadeUpIn {
     from {
