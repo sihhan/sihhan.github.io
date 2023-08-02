@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="我是Han，是一位Web全端工程師，工作之餘也熱愛攝影、旅遊、接近大自然。在 ALION 阿利恩股份有限公司 擔任CTO，主要服務有JaFun日本伴手禮、零食與遠距、遠程、遠端視訊會議服務、虛擬辦公室與雲端系統開發。">
+    content="我是Han，是一位Web全端工程師、軟體工程師，工作之餘也熱愛攝影、旅遊、接近大自然。在 ALION 阿利恩股份有限公司 擔任CTO，主要服務有JaFun日本伴手禮、零食與遠距、遠程、遠端視訊會議服務、虛擬辦公室與雲端系統開發。">
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -17,7 +17,7 @@
   <meta property="og:title" content="Han's Daily Life - 工程師日常">
   <meta property="og:type" content="website" />
   <meta property="og:description"
-    content="我是Han，是一位Web全端工程師，工作之餘也熱愛攝影、旅遊、接近大自然。在 ALION 阿利恩股份有限公司 擔任CTO，主要服務有JaFun日本伴手禮、零食與遠距、遠程、遠端視訊會議服務、虛擬辦公室與雲端系統開發。">
+    content="我是Han，是一位Web全端工程師、軟體工程師，工作之餘也熱愛攝影、旅遊、接近大自然。在 ALION 阿利恩股份有限公司 擔任CTO，主要服務有JaFun日本伴手禮、零食與遠距、遠程、遠端視訊會議服務、虛擬辦公室與雲端系統開發。">
   <meta property="og:url" content="https://sihhan.github.io/">
   <meta property="og:image" content="https://d1fdloi71mui9q.cloudfront.net/oVy9wtLFSya46pX7Atak_st8713623wcf4McQ">
   <meta property="og:image:secure_url"
@@ -28,10 +28,12 @@
 
   <!-- CSS only -->
   <link rel="stylesheet" media="all" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEMVZ74KX8"></script>
@@ -64,15 +66,16 @@
           <div class="content-text">
             <ul>
               <li><a href="https://alion.tw" target="_blank" rel="noopener noreferrer">ALION 股份有限公司</a>－CTO</li>
-              <li>WEB全端工程師</li>
+              <li>Software Engineer</li>
               <li>ALION 在做的事：
                 <ul>
                   <li>
+                    <a href="https://swise.tw" target="_blank" rel="noopener noreferrer">SWise</a> 讓你遠距工作效率好
+                  </li>
+
+                  <li>
                     <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">JaFun</a>
                     好吃一直吃日本零食
-                  </li>
-                  <li>
-                    <a href="https://swise.jp" target="_blank" rel="noopener noreferrer">SWise</a> 遠端工作沒煩惱
                   </li>
                 </ul>
               </li>
@@ -81,18 +84,18 @@
         </div>
 
         <div class="profile-card-social">
-          <a href="https://www.facebook.com/melonslife/" class="profile-card-social__item facebook"
-            aria-label="閱讀更多關於我的Facebook資訊" target="_blank">
-            <i class="bi bi-facebook"></i>
+          <a href="https://www.threads.net/@shw_han" class="profile-card-social__item threads"
+            aria-label="閱讀更多關於我的 threads 資訊" target="_blank">
+            <img src="https://sihhan.github.io/images/logos/threads-logo.png" alt="" class="threads-logo">
           </a>
 
           <a href="https://www.instagram.com/shw_han/" class="profile-card-social__item instagram"
-            aria-label="閱讀更多關於我的Instagram資訊" target="_blank">
+            aria-label="閱讀更多關於我的 Instagram 資訊" target="_blank">
             <i class="bi bi-instagram"></i>
           </a>
 
-          <a href="mailto:han@alion.jp" class="profile-card-social__item mail" aria-label="想了解我在做的事，Email 跟我聊聊"
-            target="_blank">
+          <a href="mailto:photolifeHan@google.com" class="profile-card-social__item mail"
+            aria-label="有系統或是Web開發需求，可跟我聊聊" target="_blank">
             <i class="bi bi-envelope"></i>
           </a>
 
@@ -101,6 +104,23 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <div class="profile-info">
+      <div class="profile-info__label">
+        <div class="profile-info__img">
+          <img src="https://sihhan.github.io/images/logos/swise-logo.png" alt="打破距離限制，遠距工作新改革體驗線上虛擬辦公室">
+        </div>
+        <div class="first">打破距離限制的虛擬辦公室</div>
+      </div>
+    </div>
+
+    <div class="profile-info">
+      <a href="https://swise.tw" target="_blank" rel="noopener noreferrer">
+        <video autoplay loop muted>
+          <source src="https://swise.tw/wp-content/themes/swise//video/feature2.mp4" type="video/mp4">
+        </video>
+      </a>
     </div>
 
     <div class="profile-info">
@@ -127,78 +147,39 @@
         <div class="profile-info__img">
           <img src="https://sihhan.github.io/images/pagoda-lineal.gif" alt="JaFun 日本伴手禮、零食訂閱">
         </div>
-        <div>JaFun 十月份限定零食</div>
+        <div>JaFun 限定伴手禮、零食</div>
       </div>
     </div>
 
     <div class="marquee-gallery">
-      <marquee behavior="scroll" direction="left" scrollamount="3">
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/10_1.jpeg" alt="JaFun 十月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/10_2.jpeg" alt="JaFun 十月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/10_3.jpg" alt="JaFun 十月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/10_4.jpg" alt="JaFun 十月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/10_5.jpg" alt="JaFun 十月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/10_6.jpg" alt="JaFun 十月份限定零食" />
-        </a>
-
-      </marquee>
-    </div>
-
-    <div class="profile-info">
-      <div class="profile-info__label">
-        <div class="profile-info__img">
-          <img src="https://sihhan.github.io/images/pagoda-lineal.gif" alt="JaFun 日本伴手禮、零食訂閱">
+      <!-- Slider main container -->
+      <section class="section slider-section">
+        <div class="container slider-column">
+          <div class="swiper swiper-slider">
+            <div class="swiper-wrapper">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/10_1.jpeg" alt="JaFun十月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/10_2.jpeg" alt="JaFun十月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/10_3.jpg" alt="JaFun十月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/10_4.jpg" alt="JaFun十月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/10_5.jpg" alt="JaFun十月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/10_6.jpg" alt="JaFun十月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/product_7283.jpg" alt="JaFun九月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/product_7281.jpg" alt="JaFun九月份限定零食">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/product_7237.jpg" alt="海賊王 和菓子 月餅">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/product_7195.jpg" alt="抹茶 糰子 麻糬">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/product_5864.jpg" alt="薯條三兄弟">
+              <img class="swiper-slide" src="https://sihhan.github.io/images/jafun/product_5860.jpg" alt="卡樂比calbee洋芋片">
+            </div>
+            <span class="swiper-pagination"></span>
+            <span class="swiper-button-prev"></span>
+            <span class="swiper-button-next"></span>
+          </div>
         </div>
-        <div>JaFun 九月份限定零食</div>
-      </div>
-    </div>
-
-    <div class="marquee-gallery">
-      <marquee behavior="scroll" direction="left" scrollamount="3">
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/product_7283.jpg" alt="JaFun 九月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/product_7281.jpg" alt="JaFun 九月份限定零食" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/product_7237.jpg" alt="海賊王 和菓子 月餅" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/product_7195.jpg" alt="抹茶 糰子 麻糬" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/product_5864.jpg" alt="薯條三兄弟" />
-        </a>
-
-        <a href="https://www.jafun.com.tw/subscribe" target="_blank" rel="noopener noreferrer">
-          <img src="https://sihhan.github.io/images/jafun/product_5860.jpg" alt="卡樂比 calbee 洋芋片" />
-        </a>
-      </marquee>
+      </section>
     </div>
 
     <!-- QR Code -->
-    <div id="qr-code-container" ></div>
+    <div id="qr-code-container"></div>
 
     <div class="footer">
       <p>Copyright © <span id="year"></span><a href="https://sihhan.github.io/" target="_blank"> sihhan</a> All rights
@@ -207,6 +188,52 @@
   </div>
 
   <script type="text/javascript" src="js/index.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper-slider", {
+      // Optional parameters
+      centeredSlides: true,
+      slidesPerView: 1,
+      grabCursor: true,
+      freeMode: false,
+      loop: true,
+      mousewheel: false,
+      keyboard: {
+        enabled: true
+      },
+
+      // Enabled autoplay mode
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: false,
+        clickable: true
+      },
+
+      // If we need navigation
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+
+      // Responsive breakpoints
+      breakpoints: {
+        640: {
+          slidesPerView: 1.25,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        }
+      }
+    });
+
+  </script>
 </body>
 
 </html>
