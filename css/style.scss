@@ -31,6 +31,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: $base-color;
     margin: 0;
+    cursor: default;
 }
 
 a,
@@ -702,7 +703,6 @@ a {
     max-width: 75rem;
     height: auto;
     margin-inline: auto;
-    padding-inline: 1.25rem;
 }
 
 .swiper {
