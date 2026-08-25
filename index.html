@@ -131,11 +131,45 @@
       </div>
 
       <nav class="portfolio__nav" aria-label="作品集分類">
+        <a href="#interior">空間攝影</a>
         <a href="#portrait">人像攝影</a>
         <a href="#food">美食攝影</a>
-        <a href="#interior">空間攝影</a>
         <a href="#automotive">汽機車攝影</a>
       </nav>
+
+      <!-- 空間攝影 -->
+      <div class="portfolio__category" id="interior">
+        <div class="portfolio__category-head">
+          <h3>空間攝影</h3>
+          <span>Interior</span>
+        </div>
+        <div class="portfolio__grid">
+          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DcY-VuFgenv/" data-instgrm-version="14">
+            <div class="portfolio__placeholder">
+              <i class="bi bi-house-door"></i>
+              <span>即將更新</span>
+            </div>
+          </blockquote>
+          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DZexIEPsfO7/" data-instgrm-version="14">
+            <div class="portfolio__placeholder">
+              <i class="bi bi-house-door"></i>
+              <span>即將更新</span>
+            </div>
+          </blockquote>
+          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DSZlQ99Abi8/" data-instgrm-version="14">
+            <div class="portfolio__placeholder">
+              <i class="bi bi-house-door"></i>
+              <span>即將更新</span>
+            </div>
+          </blockquote>
+          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DJNmE7My65v/" data-instgrm-version="14">
+            <div class="portfolio__placeholder">
+              <i class="bi bi-house-door"></i>
+              <span>即將更新</span>
+            </div>
+          </blockquote>
+        </div>
+      </div>
 
       <!-- 人像攝影 -->
       <div class="portfolio__category" id="portrait">
@@ -196,6 +230,12 @@
               <span>即將更新</span>
             </div>
           </blockquote>
+          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DWiN3nngVSz/" data-instgrm-version="14">
+            <div class="portfolio__placeholder">
+              <i class="bi bi-egg-fried"></i>
+              <span>即將更新</span>
+            </div>
+          </blockquote>
           <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/C-ww_0QpvBj/" data-instgrm-version="14">
             <div class="portfolio__placeholder">
               <i class="bi bi-egg-fried"></i>
@@ -223,34 +263,6 @@
           <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DFHcPE3zwXn/" data-instgrm-version="14">
             <div class="portfolio__placeholder">
               <i class="bi bi-egg-fried"></i>
-              <span>即將更新</span>
-            </div>
-          </blockquote>
-        </div>
-      </div>
-
-      <!-- 空間攝影 -->
-      <div class="portfolio__category" id="interior">
-        <div class="portfolio__category-head">
-          <h3>空間攝影</h3>
-          <span>Interior</span>
-        </div>
-        <div class="portfolio__grid">
-          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DZexIEPsfO7/" data-instgrm-version="14">
-            <div class="portfolio__placeholder">
-              <i class="bi bi-house-door"></i>
-              <span>即將更新</span>
-            </div>
-          </blockquote>
-          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DSZlQ99Abi8/" data-instgrm-version="14">
-            <div class="portfolio__placeholder">
-              <i class="bi bi-house-door"></i>
-              <span>即將更新</span>
-            </div>
-          </blockquote>
-          <blockquote class="instagram-media portfolio__embed" data-instgrm-permalink="https://www.instagram.com/p/DJNmE7My65v/" data-instgrm-version="14">
-            <div class="portfolio__placeholder">
-              <i class="bi bi-house-door"></i>
               <span>即將更新</span>
             </div>
           </blockquote>
@@ -310,7 +322,24 @@
     });
   </script>
   <!-- Instagram 官方嵌入：讀取每個 blockquote 的 data-instgrm-permalink 並渲染成真實貼文卡片 -->
-  <script async src="//www.instagram.com/embed.js"></script>
+  <script async src="//www.instagram.com/embed.js" onload="window.__igEmbedLoaded = true;"></script>
+  <script>
+    // IG 的 iframe 高度是嵌入當下算好就固定的，字型/版面稍後才 reflow 完成時常會跟實際內容高度對不上，
+    // 留下一段空白。載入完成與視窗大小變動時重新 process 一次讓它重新量測。
+    function reprocessIgEmbeds() {
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+      }
+    }
+    window.addEventListener('load', () => {
+      setTimeout(reprocessIgEmbeds, 800);
+    });
+    let igResizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(igResizeTimer);
+      igResizeTimer = setTimeout(reprocessIgEmbeds, 300);
+    });
+  </script>
 </body>
 
 </html>
